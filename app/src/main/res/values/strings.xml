@@ -1,0 +1,18 @@
+<resources>
+    <string name="intro_text">Bienvenido a enterate, donde te informamos de lo que hacen los políticos</string>
+    <string name="text_pre_login_button">Ya eres miembro? </string>
+    <string name="login_button">Inicia Sesion</string>
+    <string name="pre_register_button">Nuevo aquí?</string>
+    <string name="register_button">Regístrate</string>
+    <string name="name_tip">Nombre de Usuario:</string>
+    <string name="name_placeholder">Esteban</string>
+    <string name="app_name">Entérate</string>
+    <string name="email_label">Email:</string>
+    <string name="email_tip">ejemplo@hotmail.com</string>
+    <string name="contrasenya_label">Contraseña:</string>
+    <string name="contrasenya_tip">************</string>
+    <string name="boton_nuevo_usuario">Completar Registro</string>
+    <string name="boton_acceso_usuario">Accede</string>
+
+    <string name="tip_registro">Introduce tus datos para registrarte</string>
+</resources>
