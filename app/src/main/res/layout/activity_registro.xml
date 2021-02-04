@@ -8,20 +8,26 @@
         android:id="@+id/layout_id2"
         tools:context=".RegistroActivity">
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/name_entry"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40sp"
             android:ems="10"
             android:hint="@string/name_placeholder"
             android:inputType="textPersonName"
-
             app:layout_constraintBottom_toTopOf="@+id/boton_nuevo_usuario"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.333"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.326" />
+            app:layout_constraintVertical_bias="0.326" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/nombrecompletoRegistro"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <TextView
             android:id="@+id/tip_registro"
@@ -63,10 +69,11 @@
             app:layout_constraintTop_toTopOf="@+id/name_entry"
             app:layout_constraintVertical_bias="0.289" />
 
-    <EditText
-            android:id="@+id/email_entry"
-            android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_entry_inputlayout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40sp"
             android:ems="10"
             android:hint="@string/email_tip"
             android:inputType="textPersonName"
@@ -75,7 +82,12 @@
             app:layout_constraintHorizontal_bias="0.333"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/name_entry"
-            app:layout_constraintVertical_bias="0.3" />
+            app:layout_constraintVertical_bias="0.3" >
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/email_Registro"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
             android:id="@+id/contrasenya_label"
@@ -87,7 +99,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.221"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/email_entry"
+            app:layout_constraintTop_toBottomOf="@+id/email_entry_inputlayout"
             app:layout_constraintVertical_bias="0.421" />
 
     <Button
@@ -102,17 +114,38 @@
             app:layout_constraintHorizontal_bias="0.4"
             app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/contrasenya_entry"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40sp"
             android:ems="10"
-            android:hint="@string/contrasenya_tip"
+            android:hint="@string/name_tip"
             android:inputType="textPersonName"
-            app:layout_constraintBottom_toTopOf="@+id/boton_nuevo_usuario"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.333"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/email_entry"
-            app:layout_constraintVertical_bias="0.581" />
+            app:layout_constraintTop_toBottomOf="@+id/email_entry_inputlayout"
+            app:layout_constraintBottom_toTopOf="@+id/boton_nuevo_usuario">
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/nombreusuarioRegistro"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40sp"
+            android:inputType="textPersonName"
+            android:hint="@string/contrasenya_tip"
+            android:ems="10"
+            android:id="@+id/editTextTextPersonName"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contrasenya_entry"
+            app:layout_constraintBottom_toTopOf="@+id/boton_nuevo_usuario">
+        <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent"
+                                                                 android:layout_height="match_parent"
+                                                                 android:id="@+id/contrasenya_Registro"/>
+    </com.google.android.material.textfield.TextInputLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
